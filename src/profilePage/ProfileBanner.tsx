@@ -6,8 +6,6 @@ import { getProfileBanner } from '../queries/getProfileBanner';
 import { ProfileBanner as ProfileBannerType } from '../types';
 
 const ProfileBanner: React.FC = () => {
-
-
   const [bannerData, setBannerData] = useState<ProfileBannerType | null>(null);
 
   useEffect(() => {
@@ -20,31 +18,37 @@ const ProfileBanner: React.FC = () => {
 
   if (!bannerData) return <div>Loading...</div>;
 
-  //const handlePlayClick = () => {
-  //  window.open(bannerData.resumeLink.url, '_blank');
-  //};
-  // Hardcoded version using your local PDF from the public folder:
+  // Hardcoded version for the resume link (previous dynamic code is commented out):
+  // const handlePlayClick = () => {
+  //   window.open(bannerData.resumeLink.url, '_blank');
+  // };
   const handlePlayClick = () => {
     window.open('/Jeet_Resume.pdf', '_blank');
   };
 
-  //const handleLinkedinClick = () => { 
-  //  window.open(bannerData.linkedinLink, '_blank');
-  //}
-  // Hardcoded LinkedIn link: Replace the URL with your actual LinkedIn profile URL.
+  // Hardcoded LinkedIn link (previous dynamic code is commented out):
+  // const handleLinkedinClick = () => { 
+  //   window.open(bannerData.linkedinLink, '_blank');
+  // };
   const handleLinkedinClick = () => {
-    window.open('https://www.linkedin.com/in/jeet-kanani-2a6048240/', '_blank');
+    window.open('https://www.linkedin.com/in/your-linkedin-profile/', '_blank');
   };
 
   return (
     <div className="profile-banner">
       <div className="banner-content">
-        <h1 className="banner-headline" id='headline'>{bannerData.headline}</h1>
+        {/* Hardcoded headline text instead of using bannerData.headline */}
+        <h1 className="banner-headline" id="headline">
+          JEET KANANI – Software Engineer Actively Seeking a New Position
+        </h1>
+        
+        {/* Hardcoded profile summary text instead of using bannerData.profileSummary */}
         <p className="banner-description">
-          {bannerData.profileSummary}
+        Results-driven Software Engineer with expertise in full-stack development, cloud computing, and scalable software design. Skilled in object-oriented programming, secure application development, and optimizing software performance through automation, unit testing, and robust debugging practices. Proficient in Python, JavaScript, C++, and RESTful API development, with hands-on experience in integrating solutions across the entire software lifecycle for end-to-end development and scalability.
         </p>
 
         <div className="banner-buttons">
+          {/* Resume and LinkedIn buttons using the updated click handlers */}
           <PlayButton onClick={handlePlayClick} label="Resume" />
           <MoreInfoButton onClick={handleLinkedinClick} label="Linkedin" />
         </div>
