@@ -28,9 +28,13 @@ const ProfileBanner: React.FC = () => {
     window.open('/Jeet_Resume.pdf', '_blank');
   };
 
-  const handleLinkedinClick = () => { 
-    window.open(bannerData.linkedinLink, '_blank');
-  }
+  //const handleLinkedinClick = () => { 
+  //  window.open(bannerData.linkedinLink, '_blank');
+  //}
+  // Hardcoded LinkedIn link: Replace the URL with your actual LinkedIn profile URL.
+  const handleLinkedinClick = () => {
+    window.open('https://www.linkedin.com/in/jeet-kanani-2a6048240/', '_blank');
+  };
 
   return (
     <div className="profile-banner">
