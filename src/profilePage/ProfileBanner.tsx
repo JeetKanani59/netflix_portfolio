@@ -20,8 +20,12 @@ const ProfileBanner: React.FC = () => {
 
   if (!bannerData) return <div>Loading...</div>;
 
+  //const handlePlayClick = () => {
+  //  window.open(bannerData.resumeLink.url, '_blank');
+  //};
+  // Hardcoded version using your local PDF from the public folder:
   const handlePlayClick = () => {
-    window.open(bannerData.resumeLink.url, '_blank');
+    window.open('/Jeet_Resume.pdf', '_blank');
   };
 
   const handleLinkedinClick = () => { 
