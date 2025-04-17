@@ -13,7 +13,13 @@ const WorkPermit: React.FC = () => {
       <div className="work-permit-card">
         <h2 className="work-permit-headline">{headline}</h2>
         <p className="work-permit-summary">
-          {description}
+          I will graduate this May 2025 and have already applied for my{' '}
+         <strong className="highlight">
+          Employment Authorization Document (EAD)
+          </strong>
+          , which allows me to work in the US! 🇺🇸 My visa is valid until{' '}
+         <strong className="highlight">05/29/2028</strong> 📅, giving me the
+         opportunity to build valuable experience and grow my tech career here. 🌟
         </p>
         <p className="additional-info">
           {additionalInfo}
