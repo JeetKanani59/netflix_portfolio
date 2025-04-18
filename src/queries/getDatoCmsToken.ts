@@ -1,6 +1,6 @@
 // getDatoCmsToken.ts
 
-export const getDatoCmsToken = (): string => {
+/*export const getDatoCmsToken = (): string => {
   const hostname = window.location.hostname;
 
   switch (hostname) {
@@ -25,4 +25,4 @@ export const getDatoCmsToken = (): string => {
     default:
       throw new Error(`No DatoCMS token configured for hostname: ${hostname}`);
   }
-};
+}; */
