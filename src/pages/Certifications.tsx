@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Certifications.css';
 import { FaExternalLinkAlt, FaUniversity } from 'react-icons/fa';
-import { SiUdemy, SiCoursera, SiIeee, SiFortran } from 'react-icons/si';
+import { SiUdemy, SiIeee, SiFortran } from 'react-icons/si';
 import { Certification } from '../types';
 // import { getCertifications } from '../queries/getCertifications';  // Commented out for now
 

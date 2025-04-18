@@ -212,7 +212,7 @@ const Skills: React.FC = () => {
 
 export default Skills;
 
-{/* import React, { useEffect, useState } from 'react';
+/* import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
 
@@ -289,4 +289,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills;*/}
+export default Skills;*/

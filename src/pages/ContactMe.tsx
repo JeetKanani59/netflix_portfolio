@@ -75,7 +75,7 @@ const ContactMe: React.FC = () => {
 export default ContactMe;
 
 
-{/*import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
 import profilePic from '../images/jeet.jpeg';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
@@ -144,7 +144,7 @@ const ContactMe: React.FC = () => {
 };
 
 export default ContactMe;
-*/}
+*/
 // src/pages/ContactMe.tsx
 
 
