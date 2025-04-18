@@ -1,6 +1,83 @@
-import React, { useEffect, useState } from 'react';
+// src/pages/ContactMe.tsx
+
+import React from 'react';
 import './ContactMe.css';
-import profilePic from '../images/sumanth.jpeg';
+import profilePic from '../images/jeet.jpeg';
+import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
+
+// — REMOVE these two lines (no more dynamic fetch)
+// import { ContactMe as IContactMe } from '../types';
+// import { getContactMe } from '../queries/getContactMe';
+
+const ContactMe: React.FC = () => {
+  // ──────────────────────────────────────────────
+  // 1) Hard‑code your data here:
+  // ──────────────────────────────────────────────
+  const name             = 'Jeet Kanani';
+  const title            = 'Software Developer';
+  const summary          = `Actively seeking Software Developer and Machine Learning roles, skilled in Ruby on Rails,Java Spring Boot, React, Node, and AWS.`;
+  const companyUniversity= 'Job Hunting | The University of Texas at Dallas';
+  const linkedinLink     = 'https://www.linkedin.com/in/jeet-kanani-2a6048240/';
+  const email            = 'kananijeet7@gmail.com';
+  const phoneNumber      = '+1 9452748488';
+  // ──────────────────────────────────────────────
+
+  return (
+    <div className="contact-container">
+      <div className="linkedin-badge-custom">
+        <img
+          src={profilePic}
+          alt={name}
+          className="badge-avatar"
+        />
+        <div className="badge-content">
+          <h3 className="badge-name">{name}</h3>
+          <p className="badge-title">{title}</p>
+          <p className="badge-description">{summary}</p>
+          <p className="badge-company">{companyUniversity}</p>
+          <a
+            href={linkedinLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="badge-link"
+          >
+            <FaLinkedin className="linkedin-icon" /> View Profile
+          </a>
+        </div>
+      </div>
+
+      <div className="contact-header">
+        <p>I'm always up for a chat or a Tea! Feel free to reach out.</p>
+      </div>
+
+      <div className="contact-details">
+        <div className="contact-item">
+          <FaEnvelope className="contact-icon" />
+          <a href={`mailto:${email}`} className="contact-link">
+            {email}
+          </a>
+        </div>
+        <div className="contact-item">
+          <FaPhoneAlt className="contact-icon" />
+          <a href={`tel:${phoneNumber}`} className="contact-link">
+            {phoneNumber}
+          </a>
+        </div>
+        <div className="contact-fun">
+          <p>Or catch up over a Tea ☕</p>
+          <FaCoffee className="coffee-icon" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ContactMe;
+
+
+{/*import React, { useEffect, useState } from 'react';
+import './ContactMe.css';
+import profilePic from '../images/jeet.jpeg';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
 import { ContactMe as IContactMe } from '../types';
 import { getContactMe } from '../queries/getContactMe';
@@ -67,3 +144,7 @@ const ContactMe: React.FC = () => {
 };
 
 export default ContactMe;
+*/}
+// src/pages/ContactMe.tsx
+
+

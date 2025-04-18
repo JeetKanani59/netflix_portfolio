@@ -45,6 +45,11 @@
   color: #555;
   line-height: 1.6;
 }
+/* Highlight any inline text in Netflix‑red */
+.work-permit-summary .highlight {
+  color: #e50914;
+  font-weight: bold;
+}
 
 .work-permit-summary strong {
   color: #e50914;
