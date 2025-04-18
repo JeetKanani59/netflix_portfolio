@@ -6,7 +6,7 @@ import './Skills.css';
 // import { getSkills } from '../queries/getSkills';
 
 // Icon imports
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava, FaChartLine } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaJava, FaChartLine } from 'react-icons/fa';
 import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKeras, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiPytorch, SiScikitlearn, SiTensorflow, SiPandas, SiNumpy, SiApachespark } from 'react-icons/si';
 
 
