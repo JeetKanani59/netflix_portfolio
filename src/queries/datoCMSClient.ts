@@ -1,3 +1,5 @@
+export {};
+
 /*import { GraphQLClient } from 'graphql-request';
 import { getDatoCmsToken } from './getDatoCmsToken';
 
