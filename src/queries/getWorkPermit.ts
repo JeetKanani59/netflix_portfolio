@@ -1,3 +1,4 @@
+export{}
 // queries/getWorkPermit.ts
 /*import datoCMSClient from './datoCMSClient';
 import { WorkPermit } from '../types';

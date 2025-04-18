@@ -1,3 +1,4 @@
+export{}
 // getDatoCmsToken.ts
 
 /*export const getDatoCmsToken = (): string => {

@@ -1,3 +1,4 @@
+export {}
 // queries/getProjects.ts
 /*import datoCMSClient from './datoCMSClient';
 import { Project } from '../types';

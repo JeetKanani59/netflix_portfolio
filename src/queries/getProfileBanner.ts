@@ -1,3 +1,4 @@
+export {}
 // queries/getProfileBanner.ts
 /*import datoCMSClient from './datoCMSClient';
 import { ProfileBanner } from '../types';

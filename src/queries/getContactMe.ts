@@ -1,3 +1,4 @@
+export {}
 // queries/getContactMe.ts
 /*(import datoCMSClient from './datoCMSClient';
 import { ContactMe } from '../types';
